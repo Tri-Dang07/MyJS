@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4 — DOM thao tác nội dung</title>
+</head>
+<body>
+
+    <!-- Giao diện theo đề bài -->
+    <h2 id="title">Xin chào</h2>
+    <button id="btnChange">Đổi nội dung</button>
+
+    <!-- Đoạn xử lý JavaScript -->
+    <script>
+        // 1. Lấy các phần tử DOM dựa vào ID
+        const title = document.getElementById("title");
+        const btnChange = document.getElementById("btnChange");
+
+        // 2. Lắng nghe sự kiện click trên nút bấm
+        btnChange.addEventListener("click", function(){
+            
+            // TODO 1: Đổi title thành "Học DOM thật vui!"
+            title.textContent = "Học DOM thật vui!";
+            
+            // TODO 2: Đổi màu chữ hoặc nền (Ở đây tớ đổi cả 2 cho đẹp luôn nhé)
+            title.style.color = "deeppink";      // Đổi chữ thành màu hồng đậm
+            title.style.backgroundColor = "#f0f0f0"; // Đổi nền thành màu xám nhạt
+            
+        });
+    </script>
+
+</body>
+</html>
