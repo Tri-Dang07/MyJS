@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5 - Event Playground</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        .event-box {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .result {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Event Playground</h1>
+
+    <div class="event-box">
+        <h3>1. Sự kiện 'click'</h3>
+        <button id="btnClick">Bấm vào đây</button>
+        <div id="clickResult" class="result">Chưa có thông báo nào.</div>
+    </div>
+
+    <div class="event-box">
+        <h3>2. Sự kiện 'change'</h3>
+        <label for="colorSelect">Chọn màu chữ:</label>
+        <select id="colorSelect">
+            <option value="black">Mặc định (Đen)</option>
+            <option value="red">Đỏ</option>
+            <option value="blue">Xanh dương</option>
+            <option value="green">Xanh lá</option>
+        </select>
+        <div id="changeResult" class="result">Văn bản này sẽ đổi màu khi bạn chọn màu khác!</div>
+    </div>
+
+    <div class="event-box">
+        <h3>3. Sự kiện 'keyup'</h3>
+        <input type="text" id="nameInput" placeholder="Nhập tên của bạn...">
+        <div id="keyupResult" class="result">Xem trước tên: </div>
+    </div>
+
+    <div class="event-box">
+        <h3>4. Sự kiện 'submit'</h3>
+        <form id="myForm">
+            <input type="text" id="formInput" placeholder="Nhập nội dung bất kỳ..." required>
+            <button type="submit">Gửi Form</button>
+        </form>
+        <div id="submitResult" class="result" style="color: green;"></div>
+    </div>
+
+    <script src="MyJS/script.js"></script>
+</body>
+</html>
